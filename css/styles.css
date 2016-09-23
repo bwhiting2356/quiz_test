@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Montserrat, Sans-Serif; }
+
+header {
+  height: 75px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #FF4D63;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 75px; }
+
+button {
+  display: block;
+  cursor: pointer;
+  width: 230px;
+  height: 50px;
+  background-color: #0DCF37;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px; }
+  button#start {
+    margin: 80px auto 0 auto; }
+  button#next {
+    margin: 20px auto 0 auto; }
+
+#quiz, #results {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto 0 auto;
+  color: #35092C; }
+
+#question-status {
+  width: 300px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: 20px auto 0 auto; }
+
+#prompt {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center; }
+
+#options {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.option {
+  height: 68px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center; }
+  .option.wrong {
+    background-color: #FFBE00;
+    color: white; }
+  .option.right {
+    background-color: #0DCF37;
+    color: white; }
+
+#summary {
+  width: 300px;
+  text-align: center;
+  margin: auto; }
+
+#right-terms, #wrong-terms {
+  padding: 10px; }
+
+#right-terms {
+  background-color: #defde5; }
+
+#wrong-terms {
+  background-color: white; }
+
+.term {
+  width: 30%;
+  display: inline-block; }
+
+.definition {
+  width: 70%;
+  display: inline-block; }
+
+@media screen and (min-width: 650px) {
+  .option {
+    width: 320px; } }
+
+/*# sourceMappingURL=styles.css.map */

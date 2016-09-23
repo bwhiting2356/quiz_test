@@ -1,0 +1,128 @@
+@import 'reset';
+
+$color-smartly: #FF4D63;
+$color-green: #0DCF37;
+$color-yellow: #FFBE00;
+$color-text: #35092C;
+
+body {
+    font-family: Montserrat, Sans-Serif;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color-smartly;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    width: 230px;
+    height: 50px;
+    background-color: $color-green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+
+    &#start {
+        margin: 80px auto 0 auto;
+    }
+
+    &#next {
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+#quiz, #results {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto 0 auto;
+    color: $color-text;
+}
+
+#question-status {
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+#prompt {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#options {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.option {
+    height: 68px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+
+    &.wrong {
+        background-color: $color-yellow;
+        color: white;
+    } 
+
+    &.right {
+        background-color: $color-green;
+        color: white;
+    }
+}
+
+#summary {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+#right-terms, #wrong-terms {
+    padding: 10px;
+}
+
+#right-terms {
+    background-color: lighten($color-green, 50%);
+}
+
+#wrong-terms {
+    background-color: lighten($color-yellow, 50%);
+}
+
+.term {
+    width: 30%;
+    display: inline-block;
+}
+
+.definition {
+    width: 70%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 650px) {
+    .option {
+        width: 320px;
+    }
+}
